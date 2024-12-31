@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.details.tree.TreeController">
+   <children>
+      <TreeView fx:id="detailsTree" layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onContextMenuRequested="#selectItem" onMouseClicked="#selectItem" prefHeight="393.0" prefWidth="248.0" style="-fx-background-color: transparent;" />
+   </children>
+   <padding>
+      <Insets top="-3.0" />
+   </padding>
+</AnchorPane>

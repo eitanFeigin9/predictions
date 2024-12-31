@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.queue.QueueController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/population2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="8.0" prefHeight="51.0" prefWidth="454.0" text="Simulation queue data" textAlignment="CENTER">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2519493103027344" green="0.2641650438308716" blue="0.6184210777282715" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18981482088565826" green="0.21682098507881165" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Cooper Black" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="71.0" prefHeight="51.0" prefWidth="345.0" text="Simulations await:" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7685185074806213" green="0.7800925970077515" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7825000286102295" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Cooper Black" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="135.0" prefHeight="51.0" prefWidth="365.0" text="Simulations in progress:" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7685185074806213" green="0.7800925970077515" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7825000286102295" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Cooper Black" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="193.0" prefHeight="51.0" prefWidth="345.0" text="Finished simulations:" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7685185074806213" green="0.7800925970077515" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7825000286102295" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Cooper Black" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="finishedSimulationLabel" layoutX="381.0" layoutY="200.0" prefHeight="40.0" prefWidth="79.0" text="number" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7685185074806213" green="0.7800925970077515" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7825000286102295" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Cooper Black" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="progressSimulationLabel1" layoutX="395.0" layoutY="141.0" prefHeight="40.0" prefWidth="79.0" text="number" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7685185074806213" green="0.7800925970077515" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7825000286102295" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Cooper Black" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="waitSimulationLabel" layoutX="384.0" layoutY="79.0" prefHeight="40.0" prefWidth="79.0" text="number" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7685185074806213" green="0.7800925970077515" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7825000286102295" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Cooper Black" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

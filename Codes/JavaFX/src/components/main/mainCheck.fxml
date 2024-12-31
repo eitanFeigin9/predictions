@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="700.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.main.MainController">
+   <content>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="1485.0">
+         <children>
+            <BorderPane fx:id="mainBorderPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                     <children>
+                        <GridPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Pane prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d4d; -fx-border-color: gold;" />
+                              <Label prefHeight="17.0" prefWidth="105.0" text="Predictions" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Showcard Gothic" size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Pane layoutX="75.0" layoutY="25.0" prefHeight="37.0" prefWidth="700.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                           <children>
+                              <HBox layoutX="1.0" prefHeight="43.0" prefWidth="700.0" spacing="15.0">
+                                 <children>
+                                    <Button fx:id="loadButton" mnemonicParsing="false" onAction="#loadNewFile" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: WHITE;" styleClass="mainMenu" text="LOAD">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../pictures/upload%20file.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="detailsButton" mnemonicParsing="false" onAction="#showDetails" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: WHITE;" styleClass="mainMenu" text="Details">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../pictures/kisspng-earth-t-shirt-planet-earth-5a73c65023d9e4.1414160615175368481469.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="newExeButton" mnemonicParsing="false" onAction="#newExcetution" prefHeight="38.0" prefWidth="155.0" style="-fx-background-color: WHITE;" styleClass="mainMenu" text="New Execution">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../pictures/kisspng-running-computer-icons-clip-art-run-quickly-5ae0bda675b380.0775627115246780544821.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="resultsButton" mnemonicParsing="false" onAction="#showResults" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: WHITE;" styleClass="mainMenu" text="Results">
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../pictures/kisspng-analytics-market-research-data-analysis-research-5aca99cbbac981.5237583815232270837651.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="queueButton" mnemonicParsing="false" onAction="#QueueManagw" prefHeight="38.0" prefWidth="165.0" style="-fx-background-color: WHITE;" styleClass="mainMenu" text="Queue Management">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../pictures/kisspng-computer-icons-database-backup-download-database-icon-5b3e05742509f7.3717707015307912841517.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="exitButton" accessibleRole="BUTTON" fitHeight="22.0" fitWidth="22.0" layoutX="688.0" layoutY="12.0" onMouseClicked="#exitProgram" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../../pictures/exit.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Pane layoutX="231.0" layoutY="58.0" prefHeight="32.0" prefWidth="700.0" style="-fx-background-color: gold; -fx-border-color: #032d4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0">
+                           <children>
+                              <HBox layoutY="1.0" />
+                              <Label layoutX="4.0" layoutY="7.0" text="Current File Path" textFill="#032d4d">
+                                 <font>
+                                    <Font name="Showcard Gothic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="fileNameLabel" layoutX="206.0" layoutY="7.0" text="Label" textFill="#f5f5f5">
+                                 <font>
+                                    <Font name="Showcard Gothic" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

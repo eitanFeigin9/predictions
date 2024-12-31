@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.results.main.MainResultsController">
+   <children>
+      <BorderPane layoutX="150.0" layoutY="100.0" prefHeight="400.0" prefWidth="773.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Pane prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d4d; -fx-border-color: gold;" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Simulations managment" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Showcard Gothic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <ScrollPane fx:id="simulationScrollPane" layoutX="217.0" layoutY="26.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="969.0" style="-fx-background-color: white;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="26.0">
+                     <content>
+                        <HBox fx:id="simulationsHbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="967.0" style="-fx-background-color: white;">
+                           <children>
+                              <Button fx:id="simulationRestultId1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#simulationRestultAction" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: transparent;" text="Simulation results " textAlignment="CENTER" textFill="#032d4d">
+                                 <font>
+                                    <Font name="Cooper Black" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../pictures/kisspng-light-idea-creativity-business-lamp-performance-conjunction-with-fig-5aa8d4d3edaa41.7846154115210139719735.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="runAgainId1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#runAgainAction" prefHeight="47.0" prefWidth="241.0" style="-fx-background-color: transparent;" text="Run simulation again " textAlignment="CENTER" textFill="#032d4d">
+                                 <font>
+                                    <Font name="Cooper Black" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../pictures/kisspng-computer-icons-arrow-symbol-clip-art-kitchen-cabinets-5ad86192b334a5.9598509815241301947341.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+                  <Label fx:id="menuBack" layoutX="14.0" layoutY="29.0" prefHeight="35.0" prefWidth="119.0" text="SIMULATIONS" textFill="#b7b7b7" AnchorPane.leftAnchor="14.0">
+                     <font>
+                        <Font name="Cooper Black" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/MENU.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="menu" layoutX="14.0" layoutY="29.0" prefHeight="35.0" prefWidth="123.0" text="SIMULATIONS" textFill="#b7b7b7" AnchorPane.leftAnchor="14.0">
+                     <font>
+                        <Font name="Cooper Black" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/MENU.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="317.0" prefWidth="246.0" style="-fx-background-color: #032d4d;" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane>
+                     <content>
+                        <FlowPane fx:id="SimulationFlowPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="333.0" prefWidth="244.0" style="-fx-background-color: #032d4d;" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <GridPane fx:id="gridPane" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="223.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="255.0" minHeight="0.0" prefHeight="249.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="simoulationProgressId1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#simoulationProgressAction" prefHeight="75.0" prefWidth="453.0" style="-fx-background-color: transparent;" text="Simulation progress " textAlignment="CENTER" textFill="#032d4d" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Cooper Black" size="31.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/kisspng-timer-stopwatch-software-clock-icon-clock-5a8838aee998f7.3239805115188768469568.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Button>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView fitHeight="193.0" fitWidth="526.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/population.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tick counter:" textAlignment="CENTER" wrappingWidth="188.13671875">
+                           <font>
+                              <Font name="Cooper Black" size="26.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="playButton" contentDisplay="CENTER" layoutX="106.0" layoutY="7.0" mnemonicParsing="false" onAction="#resumeSimulation" onMouseEntered="#resumeMessage" prefHeight="60.0" prefWidth="97.0" style="-fx-background-color: WHI transparentTE;">
+                           <font>
+                              <Font name="Baskerville Old Face" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../pictures/icons8-play-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="pauseButton" layoutX="196.0" layoutY="7.0" mnemonicParsing="false" onAction="#pauseSimulation" onMouseEntered="#pauseMessage" prefHeight="60.0" prefWidth="97.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../pictures/icons8-pause-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="stopButton" alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="7.0" mnemonicParsing="false" onAction="#stopSimulation" onMouseEntered="#stopMessage" prefHeight="60.0" prefWidth="97.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../pictures/icons8-stop-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text fill="WHITE" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds counter:" textAlignment="CENTER" wrappingWidth="239.13671875">
+                           <font>
+                              <Font name="Cooper Black" size="26.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="amountOfTicks" layoutX="189.0" layoutY="83.0" prefHeight="28.0" prefWidth="176.0" text="amount" textFill="WHITE">
+                           <font>
+                              <Font name="Cooper Black" size="23.0" />
+                           </font>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="amountOfSeconds" layoutX="235.0" layoutY="146.0" prefHeight="28.0" prefWidth="232.0" text="secondsAmount" textFill="WHITE">
+                           <font>
+                              <Font name="Cooper Black" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="EntitesPopulationId" prefHeight="183.0" prefWidth="477.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <columns>
+                        <TableColumn fx:id="entityNameColumn" prefWidth="262.0" text="ENTITY NAME" />
+                        <TableColumn fx:id="amountColumn" prefWidth="212.0" text="AMOUNT" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <opaqueInsets>
+                        <Insets right="3.0" />
+                     </opaqueInsets>
+                  </TableView>
+                  <Button fx:id="EntitiesDataId1" alignment="CENTER" mnemonicParsing="false" onAction="#EntitiesDataAction" prefHeight="70.0" prefWidth="307.0" style="-fx-background-color: transparent;" text="Entities data" textAlignment="CENTER" textFill="#032d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Cooper Black" size="31.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../pictures/kisspng-teamwork-organization-business-clip-art-find-friends-5aa22a46ed8902.626790731520577094973.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="simNumber" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="210.0" text="Curr sim" textAlignment="CENTER" textFill="#032d4d">
+                     <font>
+                        <Font name="Showcard Gothic" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

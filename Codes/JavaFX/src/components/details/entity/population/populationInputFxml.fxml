@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="populationCardId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.details.entity.population.PopulationInputController">
+   <children>
+      <ImageView fitHeight="235.0" fitWidth="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../pictures/population2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="entityNameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-10.0" layoutY="-13.0" prefHeight="58.0" prefWidth="309.0" text="Entity name" textAlignment="JUSTIFY" textFill="#1b387c">
+         <font>
+            <Font name="Cooper Black" size="36.0" />
+         </font>
+         <effect>
+            <Glow level="0.48" />
+         </effect>
+      </Label>
+      <Text fill="WHITE" layoutX="4.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter entity population" wrappingWidth="272.0">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="populationInput" layoutX="16.0" layoutY="76.0">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="72.0" layoutY="121.0" mnemonicParsing="false" onAction="#confirmPopulation" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: white; -fx-border-color: white; -fx-background-radius: 10px; -fx-border-radius: 20;" text="Confirm!" textFill="#1b387c">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

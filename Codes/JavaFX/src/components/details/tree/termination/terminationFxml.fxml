@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.details.tree.termination.TerminationController">
+   <children>
+      <ImageView fitHeight="257.0" fitWidth="609.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../pictures/population.png" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="127.0" layoutY="25.0" text="Termination conditions">
+         <font>
+            <Font name="Cooper Black" size="32.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.47790055248618785" centerY="0.49763033175355453" radius="0.8908045977011494">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.06666667014360428" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="firstLabel" layoutX="127.0" layoutY="107.0" prefHeight="38.0" prefWidth="372.0" text="FIRST" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondLabel" layoutX="119.0" layoutY="174.0" prefHeight="38.0" prefWidth="372.0" text="SECOND" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

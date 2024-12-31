@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="96.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.execution.utilities.ClearStartButtonsController">
+   <children>
+      <ImageView fx:id="startButton" accessibleRole="BUTTON" fitHeight="116.0" fitWidth="125.0" layoutX="934.0" layoutY="-1.0" onMouseClicked="#startClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-15.0" AnchorPane.rightAnchor="20.0">
+         <image>
+            <Image url="@../../../pictures/5a28dc2fc1dee2.7827916115126272477941.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="clearButtom" accessibleRole="BUTTON" fitHeight="88.0" fitWidth="92.0" onMouseClicked="#clearClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="20.0">
+         <image>
+            <Image url="@../../../pictures/clean.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
